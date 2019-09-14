@@ -40,7 +40,6 @@ public abstract class AbstractEditorView extends View
     protected boolean mEditable;
     
     protected void initView(){
-       // mInputManager=(InputMethodManager)getContext().getSystemService(InputMethodManager.class);
         mInputManager=(InputMethodManager)getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
         mScroller=new OverScroller(getContext());
         mPaint=new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -58,8 +57,6 @@ public abstract class AbstractEditorView extends View
         EditorInfo info=new EditorInfo();
         info.inputType=InputType.TYPE_NULL;
         info.imeOptions=EditorInfo.IME_FLAG_NO_EXTRACT_UI;
-     /* info.initialSelStart=-1;
-        info.initialSelEnd=-1;*/
         return info;
     }
     
