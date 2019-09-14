@@ -1,11 +1,11 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 21
     buildToolsVersion "21.1.0"
 
     defaultConfig {
-        applicationId "com.android.ide"
+        applicationId "com.android.edit"
         minSdkVersion 14
         targetSdkVersion 21
         versionCode 1
@@ -20,7 +20,5 @@ android {
 }
 
 dependencies {
-	api project(':apkbuilder')
-	api project(':editor')
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
