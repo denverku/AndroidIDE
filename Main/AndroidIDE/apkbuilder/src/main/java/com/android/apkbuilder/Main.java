@@ -15,7 +15,7 @@ public class Main
    public static final int UNKNOWN=-1;
    
    
-   public static int Main(String[] args){
+   public static int main(String[] args){
           if(args[0].equals("android")){
               return execAndroid(Arrays.copyOfRange(args,1,args.length));
           } else if(args[0].equals("java")){
@@ -49,11 +49,11 @@ public class Main
     }
     
     public static String androidHelp(){
-        return "android";
+        return "android(builder)";
     }
     
     public static String javaHelp(){
-        return "java";
+        return "java(builder): project path\n-task 执行任务\n-build 构建";
     }
     
     

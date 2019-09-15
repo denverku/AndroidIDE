@@ -1,6 +1,11 @@
 apply plugin: 'com.android.library'
 
 android {
+	productFlavors {
+		test {
+		}
+	}
+
     compileSdkVersion 21
     buildToolsVersion "21.1.0"
 
