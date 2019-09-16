@@ -13,7 +13,7 @@ import android.graphics.Canvas;
 import android.view.inputmethod.InputConnection;
 import android.util.Log;
 
-public abstract class AbstractEditorView extends View
+ abstract class AbstractEditorView extends View
 {
     public AbstractEditorView(Context context){
         super(context);
