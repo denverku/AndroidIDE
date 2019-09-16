@@ -22,7 +22,7 @@ public class TestActivity extends Activity
             System.setOut(out);
             System.setErr(out);
       
-        Main.main(new String[]{"help"});
+        Main.main(new String[]{"android","Hell","Java","He","xxx"});
         TextView view=new TextView(this);
         
         StringBuilder buffer=new StringBuilder();

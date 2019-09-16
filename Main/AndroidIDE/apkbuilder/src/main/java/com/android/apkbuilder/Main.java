@@ -16,17 +16,22 @@ public class Main
    
    
    public static int main(String[] args){
-          if(args[0].equals("android")){
-              return execAndroid(Arrays.copyOfRange(args,1,args.length));
-          } else if(args[0].equals("java")){
-              return execJava(Arrays.copyOfRange(args,1,args.length));
-          }else if(args[0].equals("help")|args[0].equals("-help")){
-              System.out.println(usage());
-              return SUCCESS;
-          }else{
-              System.out.println("未知的命令:"+args[0]);
-              return UNKNOWN;
-          }
+       String main=args[0];
+       switch(main){
+           case "androidbuilder":
+           case "android":
+           return execAndroid(Arrays.copyOfRange(args,1,args.length));
+           case "javabuilder":
+           case "java":
+           return execJava(Arrays.copyOfRange(args,1,args.length));
+           case "usage":
+           case "help":
+           System.out.println(usage());
+           return SUCCESS;
+           default:
+           System.out.println("错误的命令:"+main);
+           return UNKNOWN;
+       }
    }
    
     
@@ -49,7 +54,7 @@ public class Main
     }
     
     public static String androidHelp(){
-        return "android(builder)";
+        return "android(builder):";
     }
     
     public static String javaHelp(){

@@ -1,5 +1,6 @@
 package com.android.apkbuilder.project;
 
-public class Project
+public abstract class Project
 {
+  
 }
