@@ -10,5 +10,13 @@ public class MainActivity extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        
     }
+
+    @Override
+    public VoiceInteractor getVoiceInteractor()
+    {
+        return super.getVoiceInteractor();
+    }
+    
 }
